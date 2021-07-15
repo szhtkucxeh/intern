@@ -12,7 +12,7 @@ export class QuestionnairebComponent implements OnInit {
   medical_institution;
   residency;
   years;
- 
+  resultb;
   constructor(private internService:InternService) { }
  
     
@@ -29,7 +29,9 @@ export class QuestionnairebComponent implements OnInit {
     console.log(this.internService.Data.department);
     console.log(this.internService.Data.medical_institution);
     console.log(this.internService.Data.years);
-  }
- 
   
-}
+  this.internService.createUser().subscribe((res)=>{ 
+    this.resultb = res
+    console.log(this.resultb);
+   })
+  }}

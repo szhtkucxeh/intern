@@ -42,18 +42,19 @@ console.log(a);
     return this.httpClient.get(`https://data.gov.il/api/3/action/datastore_search?resource_id=c84082e9-7d45-4853-9a95-e7eaad7f66d5&limit=1000`)
         
   }
-  getlocilst (first_name): Observable <any>{
+//   getlocilst (first_name): Observable <any>{
+
   
-    return this.httpClient.get(`http://localhost:5000/api/users/gets/`+first_name)
-    // {first_name:})
+//     return this.httpClient.get(`http://localhost:5000/api/users/gets/`+first_name)
+//     // {first_name:})
     
 
 
-}
+// }
 
 createUser (): Observable <any>{
-  
-  return this.httpClient.post('http://localhost:5000/api/users/gets/', this.Data)
+  console.log("CREATE FUNCTION!!!!");
+  return this.httpClient.post('http://localhost:5000/api/users/create', this.Data)
 }
 }
 

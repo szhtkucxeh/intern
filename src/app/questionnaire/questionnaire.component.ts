@@ -31,10 +31,11 @@ export class QuestionnaireComponent implements OnInit {
    this.resulta = res.result.records.map(field=>field['שם_ארץ'])
    console.log(this.resulta);
   })
-  this.internService.getlocilst("yak").subscribe((res)=>{ 
-    this.resultb = res
-    console.log(this.resultb);
-   })
+  // this.internService.getlocilst("yak").subscribe((res)=>{ 
+  //   this.resultb = res
+  //   console.log(this.resultb);
+  //  })
+ 
 }
 
 
