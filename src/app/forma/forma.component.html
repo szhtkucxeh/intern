@@ -1,0 +1,74 @@
+<!-- <body> -->
+<div class=" breadcrumb-item active "style="margin-left: 85%" aria-current="page">Already have an eccount?<a [routerLink]='["/HaveAccount"]'> LOG in</a></div>
+<
+<p> !ברוכים הבאים </p>
+ <!-- <p>{{id}}</p>  -->
+<p>אם עדיין לא נרשמתם יש להרשם ע"י כניסה בלחצן הבא</p>     
+<form  #aab="ngForm"class="row g-3 needs-validation" novalidate>
+    <div class="col-md-4 position-relative">
+      <label for="validationTooltip01" class="form-label">id number</label>
+      <input  name=" a" [(ngModel)]="id" type="text" class="form-control" id="validationTooltip01" placeholder=" id number" required  >
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 position-relative">
+      <label for="validationTooltip02" class="form-label">Full name</label>
+      <input name="b" [(ngModel)]="fullName" type="text" class="form-control" id="validationTooltip02" placeholder="Full name" required >
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    
+    <div class="col-md-3 position-relative">
+      <label for="validationTooltip03" class="form-label">passport</label>
+      <input name="c" [(ngModel)]="password" type="text" class="form-control" id="validationTooltip03" placeholder="paasport" required>
+      <div class="invalid-tooltip">
+        Please provide a valid city.
+      </div>
+    </div><br><p></p>
+    <div class="row g-3 needs-validation" novalidate>
+   <div class="col-md">
+      <div class="input-group mb-3">
+        <!-- <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button> -->
+        <!-- <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul> -->
+        <select  id="mycombo" name="mycombo" required >
+          <option selected="selected">בחר</option>
+          <option value="050">050</option>
+          <option value="051">051</option>
+          <option value="052">052</option>
+          <option value="053">053</option>
+          <option value="054">054</option>
+          <option value="055">055</option>
+          <option value="057" > 057</option>
+        </select>
+        
+        
+        <input name="d" [(ngModel)]="fon" type="tel" size="5"  maxlength="7"  aria-label="Text input with dropdown button" class="ar" required>
+       
+      </div>
+      <div class="col-md">
+      <!-- <div class="mb-"> -->
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input   name="e"  [(ngModel)]="ameil"  type="email"  class="form-control" id="exampleFormControlInput1" placeholder="הכנס אימייל" style="width: 300px" required>
+        </div>
+      </div>
+    </div>
+    <!-- http://www.a.lsary.s-host.org/ver2/Conact.html
+    -->
+  <!-- <div class="col-12">
+        <button routerLink='/Formb' >continue  </button>
+        </div> -->
+        <div class="col-12">
+            <button [disabled]=aab.invalid  (click) =" onSubmit()"  >continue  </button>
+            </div>
+  </form>
+<!-- </body> -->
+
+<a href="mailto:9998026@gmail.com">aaaa</a>

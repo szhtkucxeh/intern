@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+/* body{
+    margin: 15px;
+} */
+body {
+    background: rgba(6, 240, 45, 0.03);
+    /* background-image: url("/assets/הורדה.jpg"); */
+    
+    /* background-color: rgba(240, 22, 6, 0.171); */
+  }

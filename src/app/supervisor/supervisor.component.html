@@ -1,0 +1,30 @@
+<div class="container d-flex justify-content-center">
+<div class="card text-center" style="width: 18rem;">
+       
+        <div class="card-body " >
+            <form name="form1" #form1="ngForm">
+
+                <h5 class="card-title">ברוכים הבאים למנחים</h5>
+                <p class="card-text">.כדי להיכנס עליך להכניס שם וסיממא שקיבלת</p>
+                
+                <label for="validationTooltip02" class="form-label">Full name</label>
+                <input #b name="b" [(ngModel)]="fullName" type="text" class="form-control" id="b" placeholder="Full name" required >
+                <div class="valid-tooltip">
+                    Looks good!
+                </div>
+                
+                <label for="validationTooltip03" class="form-label">passport</label>
+                <input #c name="c" [(ngModel)]="password" type="text" class="form-control" id="validationTooltip03" placeholder="paasport" required>
+                <div class="invalid-tooltip">
+                    Please provide a valid city.
+                </div>
+                <br>
+                
+                <button class="form-control"   (click)='onUserClick()'  [disabled]="form1.invalid"  >continue  </button>
+            </form>
+            </div>
+            
+            
+        </div>
+    </div>
+    

@@ -1,0 +1,14 @@
+.square{
+    width: 45px;
+    height: 45px;
+    color: rgb(236, 14, 14);
+    border: solid rgb(104, 56, 236) 3px;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 7px 15px;
+    Font-weight:700;
+}
+.square:active{
+    color: rgb(94, 5, 5);
+    border-color: rgb(65, 5, 5);
+}

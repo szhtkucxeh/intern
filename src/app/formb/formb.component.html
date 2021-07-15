@@ -1,0 +1,27 @@
+<!-- <div class=" breadcrumb-item active "style="margin-left: 87%" aria-current="page">Already have an eccount?<a [routerLink]='["/HaveAccount"]'> LOG in</a></div> -->
+<p>שלום  פלוני</p>
+<p>אנא הכנס את הקוד שקיבלת באימייל</p>
+<div class="mb-2">
+    <!-- <label for="formGroupExampleInput" class="form-label">Example label</label> -->
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder = "aaaa"  >
+  </div>
+
+  <div class="row g-1" #input >
+    
+        <input type="text" #numbers class="form-control col" placeholder="0"   required>
+        <input type="number" #numbers class="form-control col" placeholder="Last name" >
+        <input type="number" #numbers class="form-control col" placeholder="First name">
+        <input type="number" #numbers class="form-control col" placeholder="Last name"  >
+     
+  </div>
+
+<p>לא קיבלת? שלח שוב</p>
+<p> {{code[0]}}</p>
+<div class="col-12">
+  <button  routerLink='/Formc'  (click)='onUserClick()' [disabled]='disabled'>continue  </button>
+  </div>
+  <!-- *ngIf='this.code.length==4;' -->
+  
+  <!-- <a  class="btn btn-primary"  routerLink='/Formc' disabled>continue</a> -->
+  <div class="dropdown" *ngIf ="show  ">
+      <!-- && coinsa.image.small -->

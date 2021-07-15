@@ -1,0 +1,34 @@
+<div class=" breadcrumb-item active "style="margin-left: 87%" aria-current="page">Already have an eccount?<a [routerLink]='["/HaveAccount"]'> LOG in</a></div>
+<p>שלום {{intern.Full_name}}</p>
+<p>אנא הכנס את הקוד שקיבלת בטלפון</p>
+
+<form #aa="ngForm" name="example"  method="get" action="html_page13.html" >
+    
+    
+    <input class="square" type="text" id="myinput" name="myinput1" [(ngModel)]="code[0]"  value="" size="1" maxlength="1" required autofocus (keyup)="w($event)"/>
+
+    <input class="square"type="text" id="myinput" name="myinput2" [(ngModel)]="code[1]"value="" size="1" maxlength="1" required (keyup)="w($event)"/>
+ 
+    <input class="square"type="text" id="myinput" name="myinput3"[(ngModel)]="code[2]" value="" size="1" maxlength="1" required (keyup)="w($event)"/>
+  
+    <input class="square" type="text" id="myinput" name="myinput4"[(ngModel)]="code[3]" value="" size="1" maxlength="1" required/>
+
+<br>
+
+<p>לעת עתה הקוד הוא A B C D</p>
+<br>
+<p>לא קיבלת? שלח שוב</p>
+<!-- <p> {{code[3]}}</p> -->
+<div class="col-12">
+  <button   (click)='onUserClick()'  [disabled]=aa.invalid  >continue  </button>
+  </div>
+</form>
+  <!-- *ngIf='this.code.length==4;' -->
+  
+  <!-- <a  class="btn btn-primary"  routerLink='/Formc' disabled>continue</a> -->
+  <div class="dropdown" *ngIf ="show  ">
+      <!-- && coinsa.image.small -->
+      <!-- #aa="ngForm" -->
+      <!-- aa.invalid -->
+
+

@@ -1,0 +1,20 @@
+/* header{
+height: 65px;
+background: #08f014;
+}
+main{
+    
+    width: 100%;
+    height:calc (100% * 65px);
+    display: flex;
+background: #e9e50b;
+} */
+/* .container{
+    border: 1px solid #08f014;
+    box-sizing: border-box;
+
+    height:100px;
+    width: 100%;
+    display: flex;
+/* background: #e9e50b; */
+/* } */

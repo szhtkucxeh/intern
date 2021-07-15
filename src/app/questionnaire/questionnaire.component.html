@@ -1,0 +1,47 @@
+<div class="container">
+<div class=" breadcrumb-item active "style="margin-left: 87%" aria-current="page">שלום {{intern.Full_name}}+תמונה</div>
+<h1> , בבקשה ספר לנו פרטים אודתיך </h1>
+<div class="row">
+        <div class="col">
+          <input name="a" [(ngModel)]="age" type="text" class="form-control" id="validationTooltip03" placeholder="age" aria-label="age" required>
+          
+        </div>
+        <div class="col">
+            <select name="b" [(ngModel)]="Choose" type="text" id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option *ngFor= "let i of resulta">{{i}}</option>
+            </select>
+            
+         </div>
+         <div class="col">
+            <select name="c" [(ngModel)]="city" type="text" id="inputState" class="form-select">
+              <option selected>city...</option>
+              <option *ngFor= "let i of result">{{i}}</option>
+            </select>
+         </div>
+        </div>
+      <br/>
+      <div class="row">
+        <div class="col">
+          <input name="d" [(ngModel)]="graduationyear" type="text" class="form-control" placeholder="graduation year" aria-label="graduationyear">
+        </div>
+        <div class="col">
+          <input name="e" [(ngModel)]="academi" type="text" class="form-control" placeholder="מקום לימודים" aria-label="academi">
+        </div>
+      </div>
+      <br>
+           <button  routerLink='/Questionnaireb' (click) ="Personal(); onUserClick()">next  </button>
+           <br>
+         <br>
+        
+        
+        <p>0% Completed</p>
+        <div class="progress" style="height: 5px">
+         <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+        </div>
+     
+    </div>
+    <!-- {{result}} -->
+
+
+ 
