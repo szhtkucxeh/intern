@@ -1,62 +1,48 @@
-<form  #aab="ngForm"class="row g-3 needs-validation" novalidate>
-<!-- <form  #aab="ngForm"class="row g-3 needs-validation" novalidate> -->
-        <div class="form-row">
-          <div class="col-md-2 mb-3">
-            <label for="validationDefault01">First name</label>
-            <input type="text" name=" e" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required>
+<div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+            <p class="card-text">{{resultb[4].Full_name}}</p>
           </div>
-          <div class="col-md-2 mb-3">
-            <label for="validationDefault02">Last name</label>
-            <input type="text" name=" r" class="form-control" id="validationDefault02" placeholder="Last name" value="Otto" required>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+            <p class="card-text">{{resultb[4].age}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+              <p class="card-text">{{resultb[4].medical_institution}}</p>
           </div>
-          <div class="col-md-4 mb-3">
-            <label for="validationDefaultUsername">Username</label>
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text" name=" t" id="inputGroupPrepend2">@</span>
-              </div>
-              <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+        </div>
+      </div>
+  </div>
+  <br>
+  <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+              <p class="card-text">{{resultb[4].Full_name}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+              <p class="card-text">{{resultb[4].medical_institution}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+                <p class="card-text">{{resultb[4].department}}</p>
             </div>
           </div>
         </div>
-        <div class="form-row">
-          <div class="col-md-6 mb-3">
-            <label for="validationDefault03">City</label>
-            <input type="text" class="form-control" name=" y" id="validationDefault03" placeholder="City" required>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="validationDefault04">State</label>
-            <input type="text" class="form-control" name=" u" id="validationDefault04" placeholder="State" required>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="validationDefault05">Zip</label>
-            <input type="text" class="form-control"  name=" i" id="validationDefault05" placeholder="Zip" required>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" name=" o" id="invalidCheck2" required>
-            <label class="form-check-label" for="invalidCheck2">
-              Agree to terms and conditions
-            </label>
-          </div>
-        </div>
-        <button class="btn btn-primary" type="submit">Submit form</button>
-      </form>
-<!-- </form> -->
-      <form  #aab="ngForm"class="row g-3 needs-validation" novalidate>
-      <div class="col-md-4 position-relative">
-            <label for="validationTooltip01" class="form-label">id number</label>
-            <input  name=" a" type="text" class="form-control" id="validationTooltip01" placeholder=" id number" required  >
-            <div class="valid-tooltip">
-              Looks good!
-            </div>
-          </div>
-          <div class="col-md-4 position-relative">
-            <label for="validationTooltip02" class="form-label">Full name</label>
-            <input name="b"  type="text" class="form-control" id="validationTooltip02" placeholder="Full name" required >
-            <div class="valid-tooltip">
-              Looks good!
-            </div>
-          </div>
-          </form>
+    </div>
+

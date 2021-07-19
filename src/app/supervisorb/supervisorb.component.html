@@ -24,9 +24,14 @@
         <!-- </div> -->
         <div class="col-sm-9">
           <div class="card">
-            <div class="card-body">
-              <!-- <app-child></app-child> -->
+            <div class="card-body" *ngIf="show"  >
+              <app-child></app-child>
+              <button (click)= "switch()"></button>
+            </div>
+
+              <div class="card-body" *ngIf="!show">
               <app-child2></app-child2>
+              <button (click)= "switch()"></button>
             </div>
           </div>
         </div>

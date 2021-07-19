@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InternService } from '../servicers/intern.service';
 
 @Component({
   selector: 'app-child',
@@ -6,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent implements OnInit {
+  resultb=[];
 
-  constructor() { }
+  constructor(private internService:InternService) {
 
+  this.internService.getintern().subscribe((res)=>{ 
+    this.resultb = res
+    console.log(this.resultb);
+   })
+}
   ngOnInit(): void {
   }
   onUserClick():void{

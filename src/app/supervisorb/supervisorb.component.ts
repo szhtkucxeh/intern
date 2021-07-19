@@ -10,14 +10,20 @@ import { SupervisorService } from '../supervisor.service';
 export class SupervisorbComponent implements OnInit {
   supervisor;
   actives = 0;
+  show=true;
   constructor(private supervisorService:SupervisorService) {
 
-
+    // if ( this.show){
+    //       this.show= true;}
+    //     else{this.show= false;}
+    
    }
 
   ngOnInit(): void {
     this.supervisor=this.supervisorService.supervisorData.Full_name;
 
   }
-  
+  switch(){
+    this.show = !this.show;
+  }
 }

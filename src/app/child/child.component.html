@@ -12,8 +12,10 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">דוד</th>
+              
+              <tr *ngFor= "let inter of resultb">
+
+                <th scope="row">{{inter.Full_name}}</th>
                 <td>3</td>
                 <td>44</td>
                 <td>20/2/21</td>
@@ -21,7 +23,7 @@
                 <td><button class="form-control"   (click)='onUserClick()'>צפה בפרופיל  </button></td>
                 <!-- <td><button class="form-control"   (click)='onUserClick()'  [disabled]="form1.invalid"  >צפה בפרופיל  </button></td> -->
               </tr>
-              <tr>
+              <!-- <tr>
                   <th scope="row">משה</th>
                   <td>5</td>
                   <td>74</td>
@@ -59,7 +61,7 @@
                   <td>44</td>
                   <td>20/2/21</td>
                   <td>84</td>
-                  <td><button class="form-control"   (click)='onUserClick()'>צפה בפרופיל  </button></td>
-              </tr>
+                  <td><button class="form-control"   (click)='onUserClick()'>צפה בפרופיל  </button></td> -->
+              <!-- </tr> -->
             </tbody>
           </table>
