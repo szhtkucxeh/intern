@@ -8,15 +8,15 @@ import { InternService } from '../servicers/intern.service';
 })
 export class Child2Component implements OnInit {
   resultb=[];
-
-
+  
   constructor(private internService:InternService) {
-     
+    
     this.internService.getintern().subscribe((res)=>{ 
-        this.resultb = res
-        console.log(this.resultb[4].passport);
-       })
+      this.resultb = res
+      console.log(this.resultb[4].passport);
+    })
   }
+  currentProfile = this.internService.currentProfile;
 
   ngOnInit(): void {
   }

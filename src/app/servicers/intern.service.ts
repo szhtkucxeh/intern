@@ -7,6 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class InternService {
+  currentProfile : any;
 a;
   Data ={
     id_number:null,

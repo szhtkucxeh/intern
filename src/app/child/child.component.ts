@@ -20,7 +20,8 @@ export class ChildComponent implements OnInit {
   ngOnInit(): void {
       }
 
-  onUserClick():void{
-    console.log(this.person.id_number)
+  onUserClick(inter:any):void{
+    console.log(this.person.id_number);
+    this.internService.currentProfile = inter;
   }
   }
