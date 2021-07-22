@@ -10,7 +10,11 @@ export class SupervisorService {
     Full_name:"חיים לוי",
     passport:9876,
   }
+  // show:boolean;
+  // aa(){
+  //   console.log(this.show +"2");
+  // }
   constructor(private httpClient:HttpClient) { 
-
+    
   }
-}
+  }

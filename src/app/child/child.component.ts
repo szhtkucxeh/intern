@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { InternService } from '../servicers/intern.service';
+import { SupervisorService } from '../supervisor.service';
 
 @Component({
   selector: 'app-child',
@@ -8,8 +9,8 @@ import { InternService } from '../servicers/intern.service';
 })
 export class ChildComponent implements OnInit {
   resultb=[];
-
-  constructor(private internService:InternService) {
+  person={id_number:""};
+  constructor(private internService:InternService, private supervisorService:SupervisorService) {
 
   this.internService.getintern().subscribe((res)=>{ 
     this.resultb = res
@@ -17,8 +18,9 @@ export class ChildComponent implements OnInit {
    })
 }
   ngOnInit(): void {
-  }
-  onUserClick():void{
+      }
 
+  onUserClick():void{
+    console.log(this.person.id_number)
   }
-}
+  }

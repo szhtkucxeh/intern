@@ -13,14 +13,17 @@
             </thead>
             <tbody>
               
-              <tr *ngFor= "let inter of resultb">
+              <tr *ngFor= "let inter of resultb" [value]='inter.id_number'>
+                  <!-- <tr *ngFor= "let inter of resultb"> -->
 
                 <th scope="row">{{inter.Full_name}}</th>
+                <td>{{inter.id_number}}</td>
                 <td>3</td>
                 <td>44</td>
                 <td>20/2/21</td>
                 <td>84</td>
-                <td><button class="form-control"   (click)='onUserClick()'>צפה בפרופיל  </button></td>
+                <td><button  class="form-control" routerLink='/supervisorb/child2'  (click)='onUserClick()'  >צפה בפרופיל  </button></td>
+                
                 <!-- <td><button class="form-control"   (click)='onUserClick()'  [disabled]="form1.invalid"  >צפה בפרופיל  </button></td> -->
               </tr>
               <!-- <tr>

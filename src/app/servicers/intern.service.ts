@@ -22,7 +22,7 @@ a;
     years:null,
     ameil:null,
   };
-
+  show=true;
   
   constructor(private httpClient:HttpClient) {
     var a= Math.floor(Math.random()*10);

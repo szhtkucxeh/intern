@@ -24,18 +24,19 @@
         <!-- </div> -->
         <div class="col-sm-9">
           <div class="card">
-            <div class="card-body" *ngIf="show"  >
-              <app-child></app-child>
-              <button (click)= "switch()"></button>
+              <router-outlet></router-outlet>
+            <!-- <div class="card-body" *ngIf="show"  > -->
+              <!-- <app-child></app-child> -->
+              <!-- <button (click)= "switch()">אבא 1</button> -->
             </div>
 
-              <div class="card-body" *ngIf="!show">
-              <app-child2></app-child2>
-              <button (click)= "switch()"></button>
+              <!-- <div class="card-body" *ngIf="!show"> -->
+              <!-- <app-child2></app-child2> -->
+              <!-- <button (click)= "switch()">אבא 2</button> -->
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      <!-- </div> -->
+    <!-- </div> -->
 
     

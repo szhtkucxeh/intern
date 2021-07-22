@@ -22,7 +22,7 @@ onUserClick():void{
   
   if(this.fullName == this.supervisorService.supervisorData.Full_name 
     && this.password == this.supervisorService.supervisorData.passport){
-    this.router.navigateByUrl('/supervisorb')
+    this.router.navigateByUrl('/supervisorb/child')
   //  this.show= true
   }else{
     alert('the sms is net fit')
